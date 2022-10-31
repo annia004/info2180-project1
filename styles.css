@@ -1,11 +1,231 @@
 /* Add your CSS to this file */
+* {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    font-size: 18px;
+}
+
 body {
     margin: 0;
-    font-size: 16px;
+    /* font-size: 16px; */
 }
 
 .container {
     margin: 0 auto;
     max-width: 960px;
     width: 100%;
+}
+
+header {
+    height: 0.5in;
+}
+
+header h1 {
+    float: left;
+}
+
+header nav {
+    float: right;
+    color: #6b7280;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;    
+    list-style: none;
+    line-height: 18px;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #5A67D8;
+}
+
+.overview-hero {
+    background-color: #E2E8F0;
+    height: 2in;
+    padding: 30px;
+}
+
+.overview-hero .container {
+    width: 850px;
+}
+
+.overview-hero h2 {
+    font-style: normal; /* remove */
+}
+
+.overview-hero-image {
+    float: left;
+    padding-right: 50px; 
+}
+
+.overview-hero-image img {
+    float: left;
+    border-radius: 5px;
+    width: 206px;
+    height: 152px;
+}
+
+.learn-about {
+    padding-bottom: 50px;
+}
+
+.learn-about h2 {
+    font-size: 24px;
+    color: #48BB78;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 15px;
+}
+
+.card {
+    border-color: #E2E8F0;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    width: fit-content;
+}
+
+.card img {
+    border-radius: 5px;
+    width: 300px;
+    height: 210px;
+}
+
+.card-body {
+    margin: 5px;
+}
+
+.learn-about h3 {
+    font-size: 21px;
+    color: #48BB78;
+}
+
+.testing {
+    height: 3in;
+    background-color: #4A5568;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testing .container { 
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px; 
+}
+
+.testing-desciption { /* error made in html */
+    width: 600px;
+}
+
+.testing-desciption h2 {
+    margin-bottom: 15px;
+}
+
+.cta {
+    float: right;
+    width: 350px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta a {
+    color: white;
+    background-color: #48BB78;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px 30px;
+    text-align: center;
+}
+
+.stories {
+    padding-bottom: 50px;
+}
+
+.stories h2, .stories a {
+    color: #5A67D8;
+}
+
+.stories a {
+    text-decoration: none;
+}
+
+article {
+    height: 2in;
+    width: 850px;
+}
+
+article img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    float: left; 
+    margin-right: 25px;
+}
+
+.article-body p, .article-body a {
+    font-size: 16px;
+}
+
+.newsletter {
+    height: 2.5in;
+    padding: 30px;
+    background-color: #48BB78;
+    color: white;
+}
+
+.newsletter .container {
+    align-items: center;
+    width: 500px;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+}
+
+.newsletter #email {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 300px;
+}
+
+.newsletter button {
+    background-color: #5A67D8;
+    color: #ffffff;
+    border: none;
+    border-radius:  5px;
+    padding: 10px 30px;
+}
+
+footer {
+    height: 0.9in;
+    background-color: #4A5568;
+    position: relative;
+}
+
+footer .container {
+    color: #ffffff;
+    padding-top: 17px;
+}
+
+.message {
+    padding-top: 15px;
+    color: white;
 }
